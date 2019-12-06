@@ -39,9 +39,9 @@ under `$ZPFX/bin` (which is added to the `$PATH` by default). It needs the
 [bin-gem-node](https://github.com/zplugin/z-a-bin-gem-node) annex.
 
 ```zsh
-zplugin lucid as"null" make \
+zplugin lucid as=null make \
     atclone="cp shell/completion.zsh _fzf_completion" \
-    sbin"fzf;bin/fzf-tmux" \
+    sbin="fzf;bin/fzf-tmux" \
     …
 ```
 
