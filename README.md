@@ -16,7 +16,7 @@ zplugin pack for fzf
 # Download the package with the bin-gem-node annex-utilizing ice list
 zplugin pack"bgn" for fzf
 
-# Download the bin-gem-node annex-utilizing ice list FROM GIT REPOSITORY
+# Download with the bin-gem-node annex-utilizing ice list FROM GIT REPOSITORY
 zplugin pack"bgn" git for fzf
 ```
 
