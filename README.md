@@ -14,6 +14,9 @@ zplugin pack for fzf
 
 # Download the package with the bin-gem-node annex-utilizing ice list
 zplugin pack"bgn" for fzf
+
+# Download the bin-gem-node annex-utilizing ice list FROM GIT REPOSITORY
+zplugin pack"bgn" git for fzf
 ```
 
 ## Default Profile
@@ -24,7 +27,8 @@ Provides the fuzzy finder via Makefile-installation of the `fzf` binary under
 ```zsh
 zplugin lucid as=program pick="$ZPFX/bin/(fzf|fzf-tmux)" \
     atclone="cp shell/completion.zsh _fzf_completion; cp bin/fzf-tmux $ZPFX/bin" \
-    make="PREFIX=$ZPFX install"
+    make="PREFIX=$ZPFX install" \
+    …
 ```
 
 ## Bin-Gem-Node Profile
@@ -36,7 +40,8 @@ under `$ZPFX/bin` (which is added to the `$PATH` by default). It needs the
 ```zsh
 zplugin lucid as"null" make \
     atclone="cp shell/completion.zsh _fzf_completion" \
-    sbin"fzf;bin/fzf-tmux"
+    sbin"fzf;bin/fzf-tmux" \
+    …
 ```
 
 <!-- vim:set ft=markdown tw=80 fo+=an1 autoindent: -->
