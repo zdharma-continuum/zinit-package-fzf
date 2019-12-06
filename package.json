@@ -1,74 +1,75 @@
 {
-  "_from": "fzf@^0.19.0",
-  "_id": "zsh-fzf@0.19.0",
-  "_inBundle": false,
-  "_location": "/zsh-fzf",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "fzf@^0.19.0",
-    "name": "fzf",
-    "escapedName": "fzf",
-    "rawSpec": "^0.19.0",
-    "saveSpec": null,
-    "fetchSpec": "^0.19.0"
-  },
-  "_requiredBy": [],
-  "_resolved": "https://github.com/junegunn/fzf/archive/0.19.0.tar.gz",
-  "_shasum": "430619efb03d8fa474ff408666fe876b7bd56818",
-  "_spec": "fzf@^0.19.0",
-  "_where": "/root/github2/pkg-fzf",
-  "author": "Junegunn Choi",
-  "bugs": {
-    "url": "https://github.com/junegunn/fzf/issues"
-  },
-  "contributors": [],
-  "dependencies": {},
-  "deprecated": false,
-  "description": "A command-line fuzzy finder",
-  "devDependencies": {},
-  "directories": {
-    "test": "test"
-  },
-  "homepage": "https://github.com/junegunn/fzf",
-  "keywords": [
-    "fuzzy finder",
-    "fuzzy search",
-    "fuzzy searching",
-    "fuzzy"
-  ],
-  "license": "MIT",
-  "name": "zsh-fzf",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/junegunn/fzf.git"
-  },
-  "scripts": {
-    "test": "make test"
-  },
-  "version": "0.19.0",
-  "zsh-data": {
-      "plugin-info": {
-          "user": "junegunn",
-          "plugin": "fzf",
-          "requires": "go"
-      },
-      "zplugin-ices": {
-        "default": {
-          "lucid": "",
-          "as": "program",
-          "pick": "$ZPFX/bin/(fzf|fzf-tmux)",
-          "atclone": "cp shell/completion.zsh _fzf_completion; cp bin/fzf-tmux $ZPFX/bin",
-          "make": "PREFIX=$ZPFX install"
+    "_from": "fzf@^0.19.0",
+    "_id": "zsh-fzf@0.19.0",
+    "_inBundle": false,
+    "_location": "/zsh-fzf",
+    "_phantomChildren": {},
+    "_requested": {
+        "type": "range",
+        "registry": true,
+        "raw": "fzf@^0.19.0",
+        "name": "fzf",
+        "escapedName": "fzf",
+        "rawSpec": "^0.19.0",
+        "saveSpec": null,
+        "fetchSpec": "^0.19.0"
+    },
+    "_requiredBy": [],
+    "_resolved": "https://github.com/junegunn/fzf/archive/0.19.0.tar.gz",
+    "_shasum": "430619efb03d8fa474ff408666fe876b7bd56818",
+    "_spec": "fzf@^0.19.0",
+    "_where": "/root/github2/pkg-fzf",
+    "author": "Junegunn Choi",
+    "bugs": {
+        "url": "https://github.com/junegunn/fzf/issues"
+    },
+    "contributors": [],
+    "dependencies": {},
+    "deprecated": false,
+    "description": "A command-line fuzzy finder",
+    "devDependencies": {},
+    "directories": {
+        "test": "test"
+    },
+    "homepage": "https://github.com/junegunn/fzf",
+    "keywords": [
+        "fuzzy finder",
+        "fuzzy search",
+        "fuzzy searching",
+        "fuzzy"
+    ],
+    "license": "MIT",
+    "name": "zsh-fzf",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/junegunn/fzf.git"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "version": "0.19.0",
+    "zsh-data": {
+        "plugin-info": {
+            "user": "junegunn",
+            "plugin": "fzf",
+            "requires": "go",
+            "version": "0.19.0"
         },
-        "bgn": {
-          "lucid": "",
-          "as": "null",
-          "atclone": "cp shell/completion.zsh _fzf_completion",
-          "make": "",
-          "sbin": "fzf;bin/fzf-tmux"
+        "zplugin-ices": {
+            "default": {
+                "lucid": "",
+                "as": "program",
+                "pick": "$ZPFX/bin/(fzf|fzf-tmux)",
+                "atclone": "cp shell/completion.zsh _fzf_completion; cp bin/fzf-tmux $ZPFX/bin",
+                "make": "PREFIX=$ZPFX install"
+            },
+            "bgn": {
+                "lucid": "",
+                "as": "null",
+                "atclone": "cp shell/completion.zsh _fzf_completion",
+                "make": "",
+                "sbin": "fzf-0.19.0 -> fzf;bin/fzf-tmux"
+            }
         }
-      }
-  }
+    }
 }
