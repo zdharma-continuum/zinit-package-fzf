@@ -60,8 +60,8 @@
                 "lucid": "",
                 "as": "program",
                 "pick": "$ZPFX/bin/(fzf|fzf-tmux)",
-                "atclone": "cp shell/completion.zsh _fzf_completion; cp bin/fzf-tmux $ZPFX/bin",
-                "make": "PREFIX=$ZPFX install"
+                "atclone": "cp shell/completion.zsh _fzf_completion; cp bin/(fzf|fzf-tmux) $ZPFX/bin",
+                "make": "!PREFIX=$ZPFX install"
             },
             "bgn": {
                 "lucid": "",
