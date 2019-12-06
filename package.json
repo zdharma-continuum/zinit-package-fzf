@@ -68,7 +68,7 @@
                 "as": "null",
                 "atclone": "cp shell/completion.zsh _fzf_completion",
                 "make": "",
-                "sbin": "fzf-0.19.0 -> fzf;bin/fzf-tmux"
+                "sbin": "target/fzf-* -> fzf; bin/fzf-tmux"
             }
         }
     }
