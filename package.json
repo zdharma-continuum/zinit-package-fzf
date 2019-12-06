@@ -47,7 +47,7 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "0.19.2",
+    "version": "0.19.3",
     "zsh-data": {
         "plugin-info": {
             "user": "junegunn",
