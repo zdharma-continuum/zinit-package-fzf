@@ -1,6 +1,7 @@
-# Fzf as a Zsh Package
+# junegunn/fzf as a Zsh package
 
-Zplugin can use the NPM package registry to automatically:
+[Zplugin](https://github.com/zdharma/zplugin) can use the NPM package registry
+to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
