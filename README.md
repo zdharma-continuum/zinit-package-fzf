@@ -9,6 +9,10 @@ to automatically:
 - the ice lists are stored in *profiles*; there's at least one profile, *default*,
 - the ices can be selectively overriden.
 
+Example invocations that'll install
+[junegunn/fzf](https://github.com/junegunn/fzf) either from the release archive
+or from Git repository:
+
 ```zsh
 # Download the package with the default ice list
 zplugin pack for fzf
