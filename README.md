@@ -2,6 +2,10 @@
 
 ##### NPM link: [https://www.npmjs.com/package/zsh-fzf](https://www.npmjs.com/package/zsh-fzf)
 
+| **Package source:** | Tarball | Git | Node | Gem |
+|---------------------|---------|-----|------|-----|
+| **Status:**         |    +    |  +  |  –   |  –  |
+
 [Zplugin](https://github.com/zdharma/zplugin) can use the NPM package registry
 to automatically:
 
