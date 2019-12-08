@@ -2,6 +2,8 @@
 
 ##### NPM link: [https://www.npmjs.com/package/zsh-fzf](https://www.npmjs.com/package/zsh-fzf)
 
+##### Homepage link: [junegunn/fzf](https://github.com/junegunn/fzf)
+
 | **Package source:** | Tarball | Git | Node | Gem |
 |:-------------------:|:-------:|:---:|:----:|:---:|
 | **Status:**         |    + <br> (default) | + | – |  –  |
