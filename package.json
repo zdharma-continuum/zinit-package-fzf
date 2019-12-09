@@ -58,9 +58,8 @@
         "zplugin-ices": {
             "default": {
                 "lucid": "",
-                "as": "program",
-                "pick": "$ZPFX/bin/(fzf|fzf-tmux)",
-                "atclone": "cp shell/completion.zsh _fzf_completion; cp bin/(fzf|fzf-tmux) $ZPFX/bin",
+                "as": "null",
+                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/(fzf|fzf-tmux) $ZPFX/bin",
                 "make": "!PREFIX=$ZPFX install"
             },
             "bgn": {
