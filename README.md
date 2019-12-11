@@ -4,9 +4,9 @@
 
 ##### Homepage link: [junegunn/fzf](https://github.com/junegunn/fzf)
 
-| **Package source:** | Tarball | Git | Node | Gem |
-|:-------------------:|:-------:|:---:|:----:|:---:|
-| **Status:**         |    + <br> (default) | + | – |  –  |
+| **Package source:** | Source Tarball | Binary | Git | Node | Gem |
+|:-------------------:|:--------------:|:------:|:---:|:----:|:---:|
+| **Status:**         |    + <br> (default) | + | +   |   –  |  -  |
 
 [Zplugin](https://github.com/zdharma/zplugin) can use the NPM package registry
 to automatically:
@@ -30,6 +30,12 @@ zplugin pack"bgn" for fzf
 
 # Download with the bin-gem-node annex-utilizing ice list FROM GIT REPOSITORY
 zplugin pack"bgn" git for fzf
+
+# Download the binary from the Github releases (like from'gh-r' ice)
+zplugin pack"binary" for fzf
+
+# Download the binary from the Github releases and install via Bin-Gem-Node shims
+zplugin pack"bgn-binary" for fzf
 ```
 
 ## Default Profile

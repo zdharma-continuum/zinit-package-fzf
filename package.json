@@ -53,19 +53,44 @@
         },
         "zplugin-ices": {
             "default": {
+                "depth":1,
                 "lucid": "",
                 "as": "null",
                 "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/(fzf|fzf-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
                 "make": "!PREFIX=$ZPFX install"
             },
+
             "bgn": {
+                "depth":1,
                 "lucid": "",
                 "as": "null",
                 "atclone": "cp shell/completion.zsh _fzf_completion",
                 "atpull": "%atclone",
                 "make": "",
                 "sbin": "target/fzf-* -> fzf; bin/fzf-tmux"
+            },
+
+            "binary": {
+                "plugin": "fzf-bin",
+                "from": "gh-r",
+
+                "lucid": "",
+                "as": "null",
+                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion",
+                "atclone": "cp -vf fzf $ZPFX/bin",
+                "atpull": "%atclone"
+            },
+
+            "bgn-binary": {
+                "plugin": "fzf-bin",
+                "from": "gh-r",
+
+                "lucid": "",
+                "as": "null",
+                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion",
+                "atpull": "%atclone",
+                "sbin": "fzf"
             }
         }
     }
