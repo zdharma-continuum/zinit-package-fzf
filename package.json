@@ -40,10 +40,6 @@
     ],
     "license": "MIT",
     "name": "zsh-fzf",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/junegunn/fzf.git"
-    },
     "scripts": {
         "test": "make test"
     },
@@ -52,20 +48,22 @@
         "plugin-info": {
             "user": "junegunn",
             "plugin": "fzf",
-            "requires": "go",
+            "requires": "go;make;cp",
             "version": "0.19.0"
         },
         "zplugin-ices": {
             "default": {
                 "lucid": "",
                 "as": "null",
-                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/(fzf|fzf-tmux) $ZPFX/bin",
+                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/(fzf|fzf-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atpull": "%atclone",
                 "make": "!PREFIX=$ZPFX install"
             },
             "bgn": {
                 "lucid": "",
                 "as": "null",
                 "atclone": "cp shell/completion.zsh _fzf_completion",
+                "atpull": "%atclone",
                 "make": "",
                 "sbin": "target/fzf-* -> fzf; bin/fzf-tmux"
             }
