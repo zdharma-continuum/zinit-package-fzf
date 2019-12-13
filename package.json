@@ -48,42 +48,51 @@
         "plugin-info": {
             "user": "junegunn",
             "plugin": "fzf",
-            "requires": "go;make;cp",
             "version": "0.19.0"
         },
         "zplugin-ices": {
             "default": {
+		"requires": "go;make;cp",
+
                 "depth": 1,
                 "lucid": "",
-                "as": "null",
-                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/(fzf|fzf-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+		"as": "command",
+                "pick": "$ZPFX/bin/fzf(|-tmux)",
+                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
                 "make": "!PREFIX=$ZPFX install"
             },
             "bgn": {
+		"requires": "go;make;cp;bgn",
+
                 "depth": 1,
                 "lucid": "",
-                "as": "null",
-                "atclone": "cp shell/completion.zsh _fzf_completion",
+                "pick": "/dev/null",
+                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
-                "make": "",
-                "sbin": "target/fzf-* -> fzf; bin/fzf-tmux"
+                "make": "install",
+                "sbin": "bin/fzf*"
             },
             "binary": {
+		"requires": "cp",
+
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
-                "as": "null",
-                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion",
+		"as": "command",
+                "pick": "$ZPFX/bin/fzf",
+                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
                 "atclone": "cp -vf fzf $ZPFX/bin",
                 "atpull": "%atclone"
             },
             "bgn-binary": {
+		"requires": "cp;bgn",
+
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
-                "as": "null",
-                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion",
+                "pick": "/dev/null",
+                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
                 "atpull": "%atclone",
                 "sbin": "fzf"
             }
