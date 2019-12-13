@@ -1,7 +1,5 @@
 # junegunn/fzf as a Zsh package
 
-##### NPM link: [https://www.npmjs.com/package/zsh-fzf](https://www.npmjs.com/package/zsh-fzf)
-
 ##### Homepage link: [junegunn/fzf](https://github.com/junegunn/fzf)
 
 | **Package source:** | Source Tarball | Binary | Git | Node | Gem |
