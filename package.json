@@ -58,7 +58,7 @@
                 "lucid": "",
 		"as": "command",
                 "pick": "$ZPFX/bin/fzf(|-tmux)",
-                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
                 "make": "!PREFIX=$ZPFX install"
             },
@@ -68,7 +68,7 @@
                 "depth": 1,
                 "lucid": "",
                 "pick": "/dev/null",
-                "atclone": "cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
                 "make": "install",
                 "sbin": "bin/fzf*"
@@ -82,7 +82,7 @@
 		"as": "command",
                 "pick": "$ZPFX/bin/fzf",
                 "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
-                "atclone": "cp -vf fzf $ZPFX/bin",
+                "atclone": "mkdir -p $ZPFX/bin; cp -vf fzf $ZPFX/bin",
                 "atpull": "%atclone"
             },
             "bgn-binary": {
@@ -93,6 +93,7 @@
                 "lucid": "",
                 "pick": "/dev/null",
                 "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
+                "atclone": "mkdir -p $ZPFX/{bin,man/man1}",
                 "atpull": "%atclone",
                 "sbin": "fzf"
             }
