@@ -23,8 +23,16 @@ or from Git repository:
 # Download the package with the default ice list
 zplugin pack for fzf
 
+# Download the package with the default ice list + setting up the key bindings
+zplugin pack"default+keys" for fzf
+
 # Download the package with the bin-gem-node annex-utilizing ice list
 zplugin pack"bgn" for fzf
+
+# Download the package with the bin-gem-node annex-utilizing ice list
+# + setting up the key bindings. The "+keys" variants are available
+# for each profile
+zplugin pack"bgn+keys" for fzf
 
 # Download with the bin-gem-node annex-utilizing ice list FROM GIT REPOSITORY
 zplugin pack"bgn" git for fzf
