@@ -56,11 +56,23 @@
 
                 "depth": 1,
                 "lucid": "",
-		"as": "command",
+                "as": "command",
                 "pick": "$ZPFX/bin/fzf(|-tmux)",
                 "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
                 "make": "!PREFIX=$ZPFX install"
+            },
+            "default+keys": {
+		"requires": "go;make;cp",
+
+                "depth": 1,
+                "lucid": "",
+                "as": "command",
+                "pick": "$ZPFX/bin/fzf(|-tmux)",
+                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atpull": "%atclone",
+                "make": "!PREFIX=$ZPFX install",
+                "src": "shell/key-bindings.zsh"
             },
             "bgn": {
 		"requires": "go;make;cp;bgn",
@@ -73,17 +85,42 @@
                 "make": "install",
                 "sbin": "bin/fzf*"
             },
+            "bgn+keys": {
+		"requires": "go;make;cp;bgn",
+
+                "depth": 1,
+                "lucid": "",
+                "pick": "/dev/null",
+                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atpull": "%atclone",
+                "make": "install",
+                "sbin": "bin/fzf*",
+                "src": "shell/key-bindings.zsh"
+            },
             "binary": {
 		"requires": "cp",
 
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
-		"as": "command",
+                "as": "command",
                 "pick": "$ZPFX/bin/fzf",
                 "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
                 "atclone": "mkdir -p $ZPFX/bin; cp -vf fzf $ZPFX/bin",
                 "atpull": "%atclone"
+            },
+            "binary+keys": {
+		"requires": "cp",
+
+                "plugin": "fzf-bin",
+                "from": "gh-r",
+                "lucid": "",
+                "as": "command",
+                "pick": "$ZPFX/bin/fzf",
+                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh -> key-bindings.zsh; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
+                "atclone": "mkdir -p $ZPFX/bin; cp -vf fzf $ZPFX/bin",
+                "atpull": "%atclone",
+                "src": "key-bindings.zsh"
             },
             "bgn-binary": {
 		"requires": "cp;bgn",
@@ -96,6 +133,19 @@
                 "atclone": "mkdir -p $ZPFX/{bin,man/man1}",
                 "atpull": "%atclone",
                 "sbin": "fzf"
+            },
+            "bgn-binary+keys": {
+		"requires": "cp;bgn",
+
+                "plugin": "fzf-bin",
+                "from": "gh-r",
+                "lucid": "",
+                "pick": "/dev/null",
+                "dl": "https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion; https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh -> key-bindings.zsh; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1; https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1",
+                "atclone": "mkdir -p $ZPFX/{bin,man/man1}",
+                "atpull": "%atclone",
+                "sbin": "fzf",
+                "src": "key-bindings.zsh"
             }
         }
     }
