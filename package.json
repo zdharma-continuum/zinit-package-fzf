@@ -110,7 +110,7 @@
                 "atpull": "%atclone"
             },
             "binary+keys": {
-		"requires": "cp",
+		"requires": "cp;dl",
 
                 "plugin": "fzf-bin",
                 "from": "gh-r",
@@ -135,7 +135,7 @@
                 "sbin": "fzf"
             },
             "bgn-binary+keys": {
-		"requires": "cp;bgn",
+		"requires": "cp;bgn;dl",
 
                 "plugin": "fzf-bin",
                 "from": "gh-r",
