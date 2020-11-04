@@ -1,23 +1,23 @@
 {
-    "_from": "fzf@^0.21.1",
-    "_id": "zsh-fzf@0.21.1",
+    "_from": "fzf@^0.24.2",
+    "_id": "zsh-fzf@0.24.2",
     "_inBundle": false,
     "_location": "/zsh-fzf",
     "_phantomChildren": {},
     "_requested": {
         "type": "range",
         "registry": true,
-        "raw": "fzf@^0.21.1",
+        "raw": "fzf@^0.24.2",
         "name": "fzf",
         "escapedName": "fzf",
-        "rawSpec": "^0.21.1",
+        "rawSpec": "^0.24.2",
         "saveSpec": null,
-        "fetchSpec": "^0.21.1"
+        "fetchSpec": "^0.24.2"
     },
     "_requiredBy": [],
-    "_resolved": "https://github.com/junegunn/fzf/archive/0.21.1.tar.gz",
-    "_shasum": "f3b1e0383d0bd9b2e19fe11f7cc0d59c00dceefa",
-    "_spec": "fzf@^0.21.1",
+    "_resolved": "https://github.com/junegunn/fzf/archive/0.24.2.tar.gz",
+    "_shasum": "a3d59760bd74671499a3db5d05d57f25ebae75f4",
+    "_spec": "fzf@^0.24.2",
     "_where": "/root/github2/pkg-fzf",
     "author": "Junegunn Choi",
     "bugs": {
@@ -43,17 +43,16 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "0.21.1",
+    "version": "0.24.2",
     "zsh-data": {
         "plugin-info": {
             "user": "junegunn",
             "plugin": "fzf",
-            "version": "0.21.1"
+            "version": "0.24.2"
         },
         "zplugin-ices": {
             "default": {
-		"requires": "go;make;cp",
-
+                "requires": "go;make;cp",
                 "depth": 1,
                 "lucid": "",
                 "as": "command",
@@ -64,8 +63,7 @@
                 "nocompile": ""
             },
             "default+keys": {
-		"requires": "go;make;cp",
-
+                "requires": "go;make;cp",
                 "depth": 1,
                 "lucid": "",
                 "as": "command",
@@ -77,8 +75,7 @@
                 "nocompile": ""
             },
             "bgn": {
-		"requires": "go;make;cp;bgn",
-
+                "requires": "go;make;cp;bgn",
                 "depth": 1,
                 "lucid": "",
                 "pick": "/dev/null",
@@ -89,8 +86,7 @@
                 "nocompile": ""
             },
             "bgn+keys": {
-		"requires": "go;make;cp;bgn",
-
+                "requires": "go;make;cp;bgn",
                 "depth": 1,
                 "lucid": "",
                 "pick": "/dev/null",
@@ -102,8 +98,7 @@
                 "nocompile": ""
             },
             "binary": {
-		"requires": "cp",
-
+                "requires": "cp",
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
@@ -115,8 +110,7 @@
                 "nocompile": ""
             },
             "binary+keys": {
-		"requires": "cp;dl",
-
+                "requires": "cp;dl",
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
@@ -129,8 +123,7 @@
                 "nocompile": ""
             },
             "bgn-binary": {
-		"requires": "cp;bgn",
-
+                "requires": "cp;bgn",
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
@@ -142,8 +135,7 @@
                 "nocompile": ""
             },
             "bgn-binary+keys": {
-		"requires": "cp;bgn;dl",
-
+                "requires": "cp;bgn;dl",
                 "plugin": "fzf-bin",
                 "from": "gh-r",
                 "lucid": "",
