@@ -14,6 +14,9 @@
     - the ice lists are stored in *profiles*; there's at least one profile, *default*,
     - the ices can be selectively overriden.
 
+More documentation on Zinit Packages can be 
+found on the [Zinit Wiki](https://zdharma.github.io/zinit/wiki/Zinit-Packages/).
+
 Example invocations that'll install
 [junegunn/fzf](https://github.com/junegunn/fzf) either from the release archive
 or from Git repository:
