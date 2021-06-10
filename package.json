@@ -99,7 +99,7 @@
             },
             "binary": {
                 "requires": "cp",
-                "plugin": "fzf-bin",
+                "plugin": "fzf",
                 "from": "gh-r",
                 "lucid": "",
                 "as": "command",
@@ -111,7 +111,7 @@
             },
             "binary+keys": {
                 "requires": "cp;dl",
-                "plugin": "fzf-bin",
+                "plugin": "fzf",
                 "from": "gh-r",
                 "lucid": "",
                 "as": "command",
@@ -124,7 +124,7 @@
             },
             "bgn-binary": {
                 "requires": "cp;bgn",
-                "plugin": "fzf-bin",
+                "plugin": "fzf",
                 "from": "gh-r",
                 "lucid": "",
                 "pick": "/dev/null",
@@ -136,7 +136,7 @@
             },
             "bgn-binary+keys": {
                 "requires": "cp;bgn;dl",
-                "plugin": "fzf-bin",
+                "plugin": "fzf",
                 "from": "gh-r",
                 "lucid": "",
                 "pick": "/dev/null",
