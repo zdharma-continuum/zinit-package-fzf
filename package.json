@@ -57,9 +57,8 @@
                 "lucid": "",
                 "as": "command",
                 "pick": "$ZPFX/bin/fzf(|-tmux)",
-                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atclone": "PREFIX=$ZPFX FZF_VERSION=0.28.0 FZF_REVISION=zinit-pack make install && mkdir -p $ZPFX/{bin,man/man1} && cp shell/completion.zsh _fzf_completion && cp -vf bin/fzf(|-tmux) $ZPFX/bin && cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
-                "make": "!PREFIX=$ZPFX FZF_VERSION=0.28.0 FZF_REVISION=zinit-pack install",
                 "nocompile": ""
             },
             "default+keys": {
@@ -68,9 +67,8 @@
                 "lucid": "",
                 "as": "command",
                 "pick": "$ZPFX/bin/fzf(|-tmux)",
-                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf bin/fzf(|-tmux) $ZPFX/bin; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atclone": "PREFIX=$ZPFX FZF_VERSION=0.28.0 FZF_REVISION=zinit-pack make install && mkdir -p $ZPFX/{bin,man/man1} && cp shell/completion.zsh _fzf_completion && cp -vf bin/fzf(|-tmux) $ZPFX/bin && cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
-                "make": "!PREFIX=$ZPFX install",
                 "src": "shell/key-bindings.zsh",
                 "nocompile": ""
             },
@@ -79,9 +77,8 @@
                 "depth": 1,
                 "lucid": "",
                 "pick": "/dev/null",
-                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atclone": "PREFIX=$ZPFX FZF_VERSION=0.28.0 FZF_REVISION=zinit-pack make install && mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
-                "make": "install",
                 "sbin": "bin/fzf*",
                 "nocompile": ""
             },
@@ -90,7 +87,7 @@
                 "depth": 1,
                 "lucid": "",
                 "pick": "/dev/null",
-                "atclone": "mkdir -p $ZPFX/{bin,man/man1}; cp shell/completion.zsh _fzf_completion; cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
+                "atclone": "PREFIX=$ZPFX FZF_VERSION=0.28.0 FZF_REVISION=zinit-pack make install && mkdir -p $ZPFX/{bin,man/man1} && cp shell/completion.zsh _fzf_completion && cp -vf man/man1/fzf(|-tmux).1 $ZPFX/man/man1",
                 "atpull": "%atclone",
                 "make": "install",
                 "sbin": "bin/fzf*",
