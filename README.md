@@ -2,20 +2,22 @@
 
 ##### Homepage link: [junegunn/fzf](https://github.com/junegunn/fzf)
 
-| **Package source:** | Source Tarball | Binary | Git | Node | Gem |
-|:-------------------:|:--------------:|:------:|:---:|:----:|:---:|
-| **Status:**         |    + <br> (default) | + | +   |   –  |  -  |
+| Package source | Source Tarball | Binary | Git | Node | Gem |
+| :------------: | :------------: | :----: | :-: | :--: | :-: |
+|     Status     |    Default     |   +    |  +  |  –   |  -  |
 
-[Zinit](https://github.com/zdharma/Zinit) can use `package.json` to automatically:
+[Zinit](https://github.com/zdharma-continuum/Zinit) can use `package.json` to
+automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
-    - there can be multiple lists of ices,
-    - the ice lists are stored in *profiles*; there's at least one profile, *default*,
-    - the ices can be selectively overriden.
+  - there can be multiple lists of ices,
+  - the ice lists are stored in *profiles*; there's at least one profile,
+    *default*,
+  - the ices can be selectively overridden.
 
-More documentation on Zinit Packages can be 
-found on the [Zinit Wiki](https://zdharma.github.io/zinit/wiki/Zinit-Packages/).
+More documentation on Zinit Packages can be found on the
+[Zinit Wiki](https://zdharma-continuum.github.io/zinit/wiki/Zinit-Packages/).
 
 Example invocations that'll install
 [junegunn/fzf](https://github.com/junegunn/fzf) either from the release archive
@@ -25,7 +27,7 @@ or from Git repository:
 # Download the package with the default ice list
 zinit pack for fzf
 
-# Download the package with the default ice list + setting up the key bindings
+# Download the package with the default ice list + set up the key bindings
 zinit pack"default+keys" for fzf
 
 # Download the package with the bin-gem-node annex-utilizing ice list
@@ -60,8 +62,8 @@ zinit lucid as=program pick="$ZPFX/bin/(fzf|fzf-tmux)" \
 
 ## Bin-Gem-Node Profile
 
-Provides the fuzzy finder via *shims*, i.e.: automatic forwarder scripts created
-under `$ZPFX/bin` (which is added to the `$PATH` by default). It needs the
+Provides the fuzzy finder via *shims*, i.e., automatic forwarder scripts created
+under `$ZPFX/bin` (added to the `$PATH` by default). It needs the
 [bin-gem-node](https://github.com/zinit-zsh/z-a-bin-gem-node) annex.
 
 ```zsh
